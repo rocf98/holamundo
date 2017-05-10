@@ -15,7 +15,7 @@ public class RegisterRequest extends StringRequest{
     private static final String REGISTER_REQUEST_URL = "http://pruebaschoolactive.esy.es/Register.php";
     private Map<String, String> params;
 
-    public RegisterRequest(String nombre, String usuario, String email, int age, String password, int cuenta, Response.Listener<String> listener){
+    public RegisterRequest(String nombre, String usuario, String email, int age, String password,String clave, int cuenta, Response.Listener<String> listener){
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("nombre", nombre);
@@ -23,6 +23,7 @@ public class RegisterRequest extends StringRequest{
         params.put("email", email);
         params.put("age", age + "");
         params.put("password", password);
+        params.put("clave", clave);
         params.put("cuenta", cuenta + "");
 
 

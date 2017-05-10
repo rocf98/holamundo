@@ -43,6 +43,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Registeralumno extends Activity {
 
@@ -66,6 +67,8 @@ public class Registeralumno extends Activity {
         final EditText correo = (EditText) findViewById(R.id.emailreg2);
         final EditText contraseña = (EditText) findViewById(R.id.password2);
         final Button bregistro= (Button)findViewById(R.id.bregister2);
+        final Registeralumno activity= new Registeralumno();
+
         spincuenta = (Spinner)findViewById(R.id.spinnercuenta);
         adapter=new ArrayAdapter<String>(this, R.layout.spinner_layout,R.id.txt, listitems);
         spincuenta.setAdapter(adapter);
@@ -87,6 +90,8 @@ public class Registeralumno extends Activity {
                 final int age = Integer.parseInt(edad.getText().toString());
                 final String password = contraseña.getText().toString();
                 final String email = correo.getText().toString();
+                final String clave = activity.generarclave(6);
+
 
                 int cuenta = 0;
 
@@ -177,7 +182,7 @@ public class Registeralumno extends Activity {
 
                 }else {
 
-                    RegisterRequest registerRequest = new RegisterRequest(nombre, usuario, email, age, password, cuenta, responseListener);
+                    RegisterRequest registerRequest = new RegisterRequest(nombre, usuario, email, age, password, clave,cuenta, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(Registeralumno.this);
                     queue.add(registerRequest);
 
@@ -241,6 +246,21 @@ public class Registeralumno extends Activity {
 
         }
 
+    }
+
+    public String generarclave(int longitud){
+        String cadenaAleatoria = "";
+        long milis = new java.util.GregorianCalendar().getTimeInMillis();
+        Random r = new Random(milis);
+        int i = 0;
+        while ( i < longitud){
+            char c = (char)r.nextInt(255);
+            if ( (c >= '0' && c <='9') || (c >='A' && c <='Z') ){
+                cadenaAleatoria += c;
+                i ++;
+            }
+        }
+        return cadenaAleatoria;
     }
 
 

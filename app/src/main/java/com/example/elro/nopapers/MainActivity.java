@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_grupos) {   //**IMPORTANTE: nav_grupos se cambia por nav_tutorados en casO de ser la cuenta "Tutor"
+        if (id == R.id.nav_grupos) {   //**IMPORTANTE: nav_grupos se cambia por nav_tutorados en caso de ser la cuenta "Tutor"
             if(tipocuenta.equals("profesor")) {  //Cuenta profesor"
                 grupos grupos = new grupos();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =
@@ -243,11 +243,35 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(this, horarioprof.class);
                 this.startActivity(intent);
 
+            }else if(tipocuenta.equals("alumno")) {//nav_horario = qrparadres
+
+                fragqrpadres fragqrpadres = new fragqrpadres();
+                android.support.v4.app.FragmentTransaction fragmentTransaction =
+                        getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragqrpadres);
+                fragmentTransaction.commit();
+
+
+
+            }else if(tipocuenta.equals("tutor"))  {  //nav_horario = nav_reportes
+
+
+            }
+
+
+
+        }
+
+
+        else if (id == R.id.nav_notificaciones) {
+            if(tipocuenta.equals("profesor")) {
+
+
+
             }else if(tipocuenta.equals("alumno")) {
 
 
             }else if(tipocuenta.equals("tutor"))  {
-
 
             }
 
@@ -270,6 +294,7 @@ public class MainActivity extends AppCompatActivity
 
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

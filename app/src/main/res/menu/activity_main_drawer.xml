@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
         <item
@@ -13,23 +14,24 @@
         <item
             android:id="@+id/nav_codigoqr"
             android:icon="@drawable/grupos"
-            android:title="Codigo QRs" />
+            android:title="Codigo QR" />
     </group>
 
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_publicacion"
+            android:id="@+id/nav_horario"
             android:icon="@drawable/grupos"
-            android:title="Publicaciones" />
+            android:title="Tutor" />
     </group>
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_hw"
+            android:id="@+id/nav_notificaciones"
             android:icon="@drawable/grupos"
-            android:title="Tareas" />
+            android:title="Noticias" />
     </group>
+
 
 
 

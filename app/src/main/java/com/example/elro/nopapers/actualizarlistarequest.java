@@ -17,19 +17,6 @@ public class actualizarlistarequest extends StringRequest {
         params.put("idGrupo", idGrupo);
         params.put("fecha", fecha);
 
-//morire
-
-//hola tu gfa
-
-//pepepepepe
-
-        //Cesar ya casi se duerme
-
-        //Prueba
-
-        ///No porque soñare con Karen , Kassandra, Perla, etc etc
-
-        //Pero no con Valeria
 
     }
 

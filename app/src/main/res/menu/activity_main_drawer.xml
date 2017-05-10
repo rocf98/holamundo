@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_grupos"
+            android:icon="@drawable/grupos"
+            android:title="Grupos" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_codigoqr"
+            android:icon="@drawable/grupos"
+            android:title="Codigo QRs" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_publicacion"
+            android:icon="@drawable/grupos"
+            android:title="Publicaciones" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hw"
+            android:icon="@drawable/grupos"
+            android:title="Tareas" />
+    </group>
+
+
+
+</menu>

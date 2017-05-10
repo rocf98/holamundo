@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lista_asistencia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    tools:context="com.example.elro.nopapers.NotficarAlPadre"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Asistencia de hoy  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView41"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView42" />
+
+    <TextView
+        android:text="fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView42"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/fecha" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textView57"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Alunnos faltantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/textView60" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:id="@+id/listfaltantes" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/textView58" />
+
+    <TextView
+        android:text="*Seleccione al alumno para notficar al padre de familia"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView49" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tefg" />
+
+    <Button
+        android:text="Ver lista completa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        android:background="@drawable/mybutton" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button11"
+        android:background="@drawable/mybutton" />
+
+</LinearLayout>

@@ -39,6 +39,8 @@ public class fragqrpadres extends Fragment {
     private Button button;
 
     private ImageView imageView;
+    private TextView clave;
+
 
 
 
@@ -49,10 +51,16 @@ public class fragqrpadres extends Fragment {
 
 
         imageView = (ImageView) llLayout.findViewById(R.id.imageView6);
+        clave = (TextView)llLayout.findViewById(R.id.textvclave);
+
+
         MainActivity activity = (MainActivity) getActivity();
         //String nombre =activity.getMyData();
         //String id =activity.getidusu();
-        String text2Qr=activity.getMyDatausuario();
+        String text2Qr=activity.getMyDataClave();
+
+        clave.setText(text2Qr);
+
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try {
             BitMatrix bitMatrix = multiFormatWriter.encode(text2Qr, BarcodeFormat.QR_CODE,250,250);

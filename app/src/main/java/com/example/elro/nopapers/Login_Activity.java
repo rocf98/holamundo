@@ -69,14 +69,18 @@ public class Login_Activity extends Activity {
                                 String password = jsonResponse.getString("password");
                                 int cuenta = jsonResponse.getInt("cuenta");
                                 String idusuario = jsonResponse.getString("idusuario");
+                                String clave = jsonResponse.getString("clave");
 
-                                    Intent intent = new Intent(Login_Activity.this, MainActivity.class);
+
+
+                                Intent intent = new Intent(Login_Activity.this, MainActivity.class);
                                     intent.putExtra("nombre", nombre);
                                     intent.putExtra("usuario", usuario);
                                     intent.putExtra("age", edad);
                                     intent.putExtra("email", email);
                                     intent.putExtra("cuenta", cuenta);
                                     intent.putExtra("idusuario", idusuario);
+                                    intent.putExtra("clave", clave);
 
                                     Login_Activity.this.startActivity(intent);
 

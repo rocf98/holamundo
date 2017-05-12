@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity
     NavigationView navigationView = null;
     Toolbar toolbar= null;
     private GoogleApiClient client;
-    private String nombre,tipocuenta,email,usuario,idusu;
+    private String nombre,tipocuenta,email,usuario,idusu,clave;
     private boolean isStartup = true;
     public String cuentatipo;
     int cuenta;
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity
         String password = intent.getStringExtra("password");
         cuenta = intent.getIntExtra("cuenta", -1);
         idusu= intent.getStringExtra("idusuario");
+        clave = intent.getStringExtra("clave");
         int layoutId=0;
 
         if(cuenta==1) {
@@ -154,6 +155,10 @@ public class MainActivity extends AppCompatActivity
     }
     public String getidusu() {
         return idusu;
+
+    }
+    public String getMyDataClave() {
+        return clave;
 
     }
 

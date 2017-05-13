@@ -180,7 +180,7 @@ public class tutorados extends Fragment {
         employeeNameNo.put(name, number);
         return employeeNameNo;
     }
-
+/*
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
@@ -339,4 +339,5 @@ public class tutorados extends Fragment {
 
 
     }
+    */
 }

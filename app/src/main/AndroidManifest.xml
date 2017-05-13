@@ -62,7 +62,8 @@
         <activity android:name=".Padresinterfaz" />
         <activity android:name=".Crearmateria" />
         <activity android:name=".NotificarAlPadre" />
-        <activity android:name=".ListaAsistencias"></activity>
+        <activity android:name=".ListaAsistencias" />
+        <activity android:name=".prueba"></activity>
     </application>
 
 </manifest>

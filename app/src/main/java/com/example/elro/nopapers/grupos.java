@@ -56,7 +56,13 @@ public class grupos extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentActivity    faActivity  = (FragmentActivity)    super.getActivity();
         RelativeLayout llLayout    = (RelativeLayout)    inflater.inflate(R.layout.fragment_grupos, container, false);
+
+
+
         listView = (ListView) llLayout.findViewById(R.id.listView1);
+
+
+
         accessWebService();
         MainActivity activity = (MainActivity) getActivity();
         name = activity.getMyData();

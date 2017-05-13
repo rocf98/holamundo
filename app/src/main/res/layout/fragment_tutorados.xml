@@ -27,7 +27,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnmanual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView62"
@@ -36,11 +36,11 @@
         android:text="Manual" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnscaner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button6"
-        android:layout_alignBottom="@+id/button6"
+        android:layout_alignBaseline="@+id/btnmanual"
+        android:layout_alignBottom="@+id/btnmanual"
         android:layout_toEndOf="@+id/textView62"
         android:text="Codigo QR" />
 
@@ -57,9 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button6"
+        android:layout_below="@+id/btnmanual"
         android:layout_marginTop="57dp"
-        android:layout_toEndOf="@+id/button6"
+        android:layout_toEndOf="@+id/btnmanual"
         android:visibility="visible"
         android:id="@+id/space" />
 
@@ -67,7 +67,7 @@
         android:id="@+id/textView63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button6"
+        android:layout_alignStart="@+id/btnmanual"
         android:layout_below="@+id/space"
         android:layout_marginTop="27dp"
         android:text="Mis tutorados" />
@@ -78,5 +78,5 @@
         android:layout_below="@+id/textView63"
         android:layout_alignStart="@+id/textView63"
         android:layout_marginTop="28dp"
-        android:layout_alignEnd="@+id/button7" />
+        android:layout_alignEnd="@+id/btnscaner" />
 </RelativeLayout>

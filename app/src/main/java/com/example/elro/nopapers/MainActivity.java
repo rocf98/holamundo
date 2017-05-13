@@ -337,6 +337,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+
     public  void cerrarsesion (View v){
         finish();
         Intent intent = new Intent(this, Login_Activity.class);

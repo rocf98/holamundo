@@ -87,7 +87,7 @@ public class fragqrpadres extends Fragment {
 
                     imageView.setDrawingCacheEnabled(true);
                     Bitmap b = imageView.getDrawingCache();
-                    MediaStore.Images.Media.insertImage(getActivity().getContentResolver(), b,"miqr", "nopapers");
+                    MediaStore.Images.Media.insertImage(getActivity().getContentResolver(), b,"qrtutor", "SchoolActive");
                     Toast.makeText(getActivity(), "Imagen guardadada en galeria", Toast.LENGTH_SHORT).show();
 
 

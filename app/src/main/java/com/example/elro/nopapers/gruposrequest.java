@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 public class gruposrequest extends StringRequest{
-    private static final String REGISTER_REQUEST_URL = "http://nopapers0122.esy.es/addgrupo.php";
+    private static final String REGISTER_REQUEST_URL = "http://schoolactive.xyz/addgrupo.php";
     private Map<String, String> params;
     private String name;
 

@@ -211,7 +211,7 @@ public class Registeralumno extends Activity {
             String result="";
             try{
                 HttpClient httpClient= new DefaultHttpClient();
-                HttpPost httpPost = new HttpPost("http://pruebaschoolactive.esy.es/categorias.php");
+                HttpPost httpPost = new HttpPost("http://schoolactive.xyz/categorias.php");
                 HttpResponse response = httpClient.execute(httpPost);
                 HttpEntity entity=response.getEntity();
                 is=entity.getContent();

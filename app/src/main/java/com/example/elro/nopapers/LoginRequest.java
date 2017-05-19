@@ -11,7 +11,7 @@ import java.util.Map;
  * Created by elro on 04/05/2016.
  */
 public class LoginRequest extends StringRequest{
-    private static final String LOGIN_REQUEST_URL = "http://pruebaschoolactive.esy.es/loginapp.php";
+    private static final String LOGIN_REQUEST_URL = "http://schoolactive.xyz/loginapp.php";
     private Map<String, String> params;
 
     public LoginRequest(String usuario, String password, Response.Listener<String> listener){

@@ -52,7 +52,7 @@ public class addgrupo extends Activity {
     EditText nombremateria;
     Spinner spinmateria;
     TextView inv1,inv2;
-    private String url = "http://pruebaschoolactive.esy.es/consultaidmat.php";
+    private String url = "http://schoolactive.xyz/consultaidmat.php";
     private String jsonResult;
     ArrayList<String> listitems=new ArrayList<>();
     ArrayAdapter<String> adapter;
@@ -209,7 +209,7 @@ public class addgrupo extends Activity {
             String result="";
             try{
                 HttpClient httpClient= new DefaultHttpClient();
-                HttpPost httpPost = new HttpPost("http://pruebaschoolactive.esy.es/materiasconsult.php");
+                HttpPost httpPost = new HttpPost("http://schoolactive.xyz/materiasconsult.php");
                 HttpResponse response = httpClient.execute(httpPost);
                 HttpEntity entity=response.getEntity();
                 is=entity.getContent();
@@ -250,7 +250,7 @@ public class addgrupo extends Activity {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/consultaidmat.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/consultaidmat.php");
 
 
             try {

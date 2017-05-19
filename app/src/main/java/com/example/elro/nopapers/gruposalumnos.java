@@ -57,7 +57,7 @@ public class gruposalumnos extends Fragment implements View.OnClickListener {
     public EditText txtcode;
     public Button btnsubir;
     private String jsonResult;
-    private String url = "http://pruebaschoolactive.esy.es/listviewgalumno.php";
+    private String url = "http://schoolactive.xyz/listviewgalumno.php";
     private ListView listView;
     public String name,cuenta;
     private Map<String, String> params;
@@ -165,7 +165,7 @@ tr.start();
     StringBuilder resul=null;
 
     try{
-        url=new URL("http://pruebaschoolactive.esy.es/loggincode.php?code="+code);
+        url=new URL("http://schoolactive.xyz/loggincode.php?code="+code);
         HttpURLConnection conection=(HttpURLConnection)url.openConnection();
         respuesta=conection.getResponseCode();
 
@@ -234,7 +234,7 @@ return  resul.toString();
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/listviewgalumno.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/listviewgalumno.php");
 
 
             try {

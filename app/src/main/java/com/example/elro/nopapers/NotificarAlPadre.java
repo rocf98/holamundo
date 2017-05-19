@@ -44,7 +44,7 @@ public class NotificarAlPadre extends AppCompatActivity {
     private String jsonResult;
     private ListView listView;
     private Map<String, String> params;
-    private String url = "http://pruebaschoolactive.esy.es/ListaAlumnosFaltas.php";
+    private String url = "http://schoolactive.xyz/ListaAlumnosFaltas.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,7 @@ public class NotificarAlPadre extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/ListaAlumnosFaltas.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/ListaAlumnosFaltas.php");
 
 
             try {

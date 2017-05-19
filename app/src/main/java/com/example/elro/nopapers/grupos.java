@@ -44,7 +44,7 @@ import java.util.regex.Pattern;
 
 public class grupos extends Fragment {
     private String jsonResult;
-    private String url = "http://pruebaschoolactive.esy.es/VerGruposProfe.php";
+    private String url = "http://schoolactive.xyz/VerGruposProfe.php";
     private ListView listView;
     public String name,cuenta, nombredegrupo;
     private Map<String, String> params;
@@ -95,7 +95,7 @@ public class grupos extends Fragment {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/VerGruposProfe.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/VerGruposProfe.php");
 
 
             try {

@@ -56,7 +56,7 @@ import java.util.regex.Pattern;
 
 public class tutorados extends Fragment {
     private String jsonResult;
-    private String url = "http://pruebaschoolactive.esy.es/VerGruposProfe.php";
+    private String url = "http://schoolactive.xyz/VerGruposProfe.php";
     private ListView listView;
     public String name,cuenta, nombredegrupo;
     private Map<String, String> params;

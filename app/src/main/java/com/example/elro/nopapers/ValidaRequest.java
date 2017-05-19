@@ -11,7 +11,7 @@ import java.util.Map;
  * Created by elro on 04/05/2016.
  */
 public class ValidaRequest extends StringRequest{
-    private static final String LOGIN_REQUEST_URL = "http://nopapers0122.esy.es/ValiAlta.php";
+    private static final String LOGIN_REQUEST_URL = "http://schoolactive.xyz/ValiAlta.php";
     private Map<String, String> params;
 
     public ValidaRequest(String claveacc,  Response.Listener<String> listener){

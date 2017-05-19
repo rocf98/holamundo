@@ -52,7 +52,7 @@ public class ListaAsistencias extends AppCompatActivity {
     private String jsonResult;
     private ListView listView;
     private Map<String, String> params;
-    private String url = "http://pruebaschoolactive.esy.es/ListaAsistenciasTotales.php";
+    private String url = "http://schoolactive.xyz/ListaAsistenciasTotales.php";
 Button btnconsultarfechas;
 
     @Override
@@ -182,7 +182,7 @@ Button btnconsultarfechas;
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/ListaAsistenciasTotales.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/ListaAsistenciasTotales.php");
 
 
             try {

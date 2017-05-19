@@ -53,7 +53,7 @@ public class infromacionalumno extends AppCompatActivity {
     public String nombregrupo,email,idGrupo,nombreusuario,asistencia,fechalistview,nombre,fecha,fechaspin;
     public TextView etnombre,etemail;
     private String jsonResult;
-    private String url = "http://pruebaschoolactive.esy.es/VerAsistenicaAlumno.php";
+    private String url = "http://schoolactive.xyz/VerAsistenicaAlumno.php";
     private ListView listView;
     private Map<String, String> params;
     ArrayList<String> listitems=new ArrayList<>();
@@ -170,7 +170,7 @@ public class infromacionalumno extends AppCompatActivity {
             String result="";
             try{
                 HttpClient httpClient= new DefaultHttpClient();
-                HttpPost httpPost = new HttpPost("http://pruebaschoolactive.esy.es/VerAsistenicaAlumno.php");
+                HttpPost httpPost = new HttpPost("http://schoolactive.xyz/VerAsistenicaAlumno.php");
                 HttpResponse response = httpClient.execute(httpPost);
                 HttpEntity entity=response.getEntity();
                 is=entity.getContent();
@@ -215,7 +215,7 @@ public class infromacionalumno extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/VerAsistenicaAlumno.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/VerAsistenicaAlumno.php");
 
 
             try {

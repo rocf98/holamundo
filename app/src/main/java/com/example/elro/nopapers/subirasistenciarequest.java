@@ -10,7 +10,7 @@ import java.util.Map;
  * Created by Usuario1 on 21/07/2016.
  */
 public class subirasistenciarequest extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://pruebaschoolactive.esy.es/PasarLista1.php";
+    private static final String REGISTER_REQUEST_URL = "http://schoolactive.xyz/PasarLista1.php";
     private Map<String, String> params;
     private String name;
 

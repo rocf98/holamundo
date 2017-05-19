@@ -11,7 +11,7 @@ import java.util.Map;
 
 
 public class coderequest extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://pruebaschoolactive.esy.es/llenardatos.php";
+    private static final String REGISTER_REQUEST_URL = "http://schoolactive.xyz/llenardatos.php";
     private Map<String, String> params;
     private String name;
 

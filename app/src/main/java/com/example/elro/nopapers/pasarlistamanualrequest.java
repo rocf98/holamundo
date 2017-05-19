@@ -8,7 +8,7 @@ import java.util.Map;
 
 
 public class pasarlistamanualrequest extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://pruebaschoolactive.esy.es/PasarListaManual.php";
+    private static final String REGISTER_REQUEST_URL = "http://schoolactive.xyz/PasarListaManual.php";
     private Map<String, String> params;
 
     public pasarlistamanualrequest(String idGrupo,String fecha,String nombreusuario, Response.Listener<String> listener){

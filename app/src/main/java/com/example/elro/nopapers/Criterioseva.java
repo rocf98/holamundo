@@ -10,7 +10,7 @@ import java.util.Map;
  * Created by elro on 30/05/2016.
  */
 public class Criterioseva extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://pruebaschoolactive.esy.es/CreacionGrupos.php";
+    private static final String REGISTER_REQUEST_URL = "http://schoolactive.xyz/CreacionGrupos.php";
     private Map<String, String> params;
     private String name;
 

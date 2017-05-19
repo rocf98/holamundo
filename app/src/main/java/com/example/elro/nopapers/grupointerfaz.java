@@ -59,7 +59,7 @@ public class grupointerfaz extends AppCompatActivity {
     private String jsonResult;
     private ListView listView;
     private Map<String, String> params;
-    private String url = "http://pruebaschoolactive.esy.es/new.php";
+    private String url = "http://schoolactive.xyz/new.php";
     public String name, nombregrupo,claveacc, idGrupo, usuarioname, nombreusuario;
     public String email,resultqr,fecha,nombrealumno;
     int contador=1;
@@ -309,7 +309,7 @@ public class grupointerfaz extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://pruebaschoolactive.esy.es/new.php");
+            HttpPost httppost = new HttpPost("http://schoolactive.xyz/new.php");
 
 
             try {
@@ -454,7 +454,7 @@ public class grupointerfaz extends AppCompatActivity {
         StringBuilder resul=null;
 
         try{
-            url=new URL("http://pruebaschoolactive.esy.es/consultalistaalumn.php?idGrupo="+idGrupo+"&nombreusuario="+nombreusuario);
+            url=new URL("http://schoolactive.xyz/consultalistaalumn.php?idGrupo="+idGrupo+"&nombreusuario="+nombreusuario);
             HttpURLConnection conection=(HttpURLConnection)url.openConnection();
             respuesta=conection.getResponseCode();
 

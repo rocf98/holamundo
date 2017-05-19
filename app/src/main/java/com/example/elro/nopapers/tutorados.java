@@ -83,7 +83,7 @@ public class tutorados extends Fragment {
 
                 IntentIntegrator integrator = new IntentIntegrator(activity);
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
-                integrator.setPrompt("Asistencia del ");
+               // integrator.setPrompt(" ");
                 integrator.setCameraId(0);
                 integrator.setOrientationLocked(false);
                 integrator.setBeepEnabled(false);

@@ -2,24 +2,13 @@ package com.example.elro.nopapers;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.widget.TextViewCompat;
-import android.support.v7.app.AlertDialog;
 import android.view.KeyEvent;
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -60,8 +49,11 @@ public class Login_Activity extends Activity {
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
+                            int codigo = jsonResponse.getInt("codigo");
                             boolean success = jsonResponse.getBoolean("success");
                             if(success){
+
+                                if(codigo==1){
                                 String nombre = jsonResponse.getString("nombre");
                                 String email = jsonResponse.getString("email");
                                 String usuario = jsonResponse.getString("usuario");
@@ -86,20 +78,14 @@ public class Login_Activity extends Activity {
 
                                 finish();
 
-
-
-
-
-
-
-
-
+                                }else{
+                                    Toast.makeText(getApplicationContext(),
+                                            "Debes verificar tu cuenta, te enviamos un correo", Toast.LENGTH_LONG).show();
+                                }
                             }else{
-                                AlertDialog.Builder builder = new AlertDialog.Builder(Login_Activity.this);
-                                builder.setMessage("Usuario o contraseña incorrectos")
-                                        .setNegativeButton("Reintentar", null)
-                                        .create()
-                                        .show();
+
+                                Toast.makeText(getApplicationContext(),
+                                        "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
